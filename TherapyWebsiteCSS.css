@@ -65,7 +65,7 @@ body{
   display: none;
 }
     
-@media screen and (max-width: 925px) {
+@media screen and (max-width: 960px) {
     .f img {
         display:block;
         float:left;
@@ -123,6 +123,17 @@ body{
 
     
 h1 {
+  margin: 0 auto;
+  display: block;
+  font-size: 20px;
+  opacity: 1;
+  font-family: 'Poppins', sans-serif;
+  text-align: center;
+  margin-bottom: 20px;
+  margin-top: 40px;
+}
+
+.h1b {
   margin: 0 auto;
   display: block;
   font-size: 20px;
@@ -336,20 +347,36 @@ li {
 	display:inline-block;
 	cursor:pointer;
 	color:#333;
-	padding:13px 31px;
+	padding:7px 7px;
 	text-decoration:none;
-    box-shadow: 0 5px 15px -5px rgba(69, 69, 69, .5);
+  box-shadow: 0 5px 15px -5px rgba(69, 69, 69, .5);
+  margin-right: 5px;
+  margin-left: 5px;
 }
 
 .bt:hover {
 	position:relative;
 	top:2px;
-     
 }
 
 .bt:active {
 	position:relative;
 	top:4px;
+}
+
+.bc {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+@media (max-width: 1000px) {
+.bc {
+  flex-direction: column;
+}
+.h1b {
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
 }
 
 .vl {
@@ -451,5 +478,3 @@ body3 {
 		 left: -10%;
 	}
 }
-
- 
